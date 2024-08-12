@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0 6vw;
-    background-color: #ffffff;
+    background-color: #ffffff
   }
   
   a {
@@ -50,32 +50,72 @@ body {
   .hero {
     margin-top: 10vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 8vh;
     height: 70vh;
 
   }
-  
-  .main {
-    width: 50%;
+
+  .herobtn{
+    background-color: #F0F0F0;
+    border-radius: 48px 48px 0px 0px;
+    padding: auto;
+    min-height: 2vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
-  
-  .main p {
-    margin-top: auto;
+
+  .hero h4{
+    font-family: 'Courier Prime', monospace;
+    font-size: 1rem;
+    max-width: 40vw;
+    margin: 0 auto 0 auto;
+    padding: auto;
+  }
+
+
+  .hero p {
+    margin-top: 6vh;
     color: #52535D;
     max-width: 40vw;
     line-height: 3vh;
     
   }
-  
-  .main h2 {
+
+  .hero h2 {
     font-family: 'Courier Prime', monospace;
     font-size: 72px;
-    max-width: 50vw;
+    max-width: 40vw;
+    margin-top: 0;
+  }
+
+  .heroimg{
+    margin-left: auto;
+  }
+
+  .heroimg img{
+    object-fit:cover;
+    width: auto;
+    max-width: 20vw;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+    margin: auto;
+    transition: border-radius 0.5s ease-in-out;
+    cursor: pointer;
+    border-radius: 24px;
   }
   
+  .heroimg img:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .herorow{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: auto;
+  }
+  
+
   .categories {
     display: flex;
     flex-direction: column;
@@ -188,7 +228,7 @@ body {
   }
   
   .img img:hover {
-    border-radius: 48px;
+    border-radius: 24px;
   }
 
   #connect{
@@ -235,14 +275,17 @@ body {
     .categories{
       display: none;
     }
-    .main{
+    .heroimg{
+      display: none;
+    }
+    .hero{
       width: 80vw;
     }
-    .main p{
+    .hero p{
       width: 70vw;
       max-width: none;
     }
-    .main h2{
+    .hero h2{
       max-width: none;
       font-size: 3rem;
     }
